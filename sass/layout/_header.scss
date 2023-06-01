@@ -1,6 +1,41 @@
-
 .header__container {
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
 }
+
+.site__logo{
+    margin-right: 2rem;
+}
+
+.navbar__list{
+    display: flex;
+    gap: 3.2rem;
+}
+
+.navbar__list__item{
+    font-size: 1.8rem;
+    position: relative;
+
+    &:hover .navbar__item__inner__menu{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.navbar__item__inner__menu{
+    background-color: bisque;
+    padding: 2.8rem 2.6rem;
+    border-radius: 20px;
+    position: absolute;
+    left: -38px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.inner__menu__item:not(:last-child){
+    margin-bottom: 3.6rem;
+}
+
